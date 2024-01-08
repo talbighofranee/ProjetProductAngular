@@ -1,0 +1,28 @@
+
+
+<form [formGroup]="productForm">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" formControlName="name" id="name">
+        <div *ngIf="productForm.get('name')?.hasError('required') && productForm.get('name')?.touched">
+          Name is required.
+        </div>
+      </div>
+      <div>
+        <label for="price">Price:</label>
+        <input type="text" formControlName="price" id="price" pattern="[0-9]+">
+        <div *ngIf="productForm.get('price')?.hasError('pattern') && productForm.get('price')?.touched">
+          Price must contain only numeric characters.
+        </div>
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <textarea formControlName="description" id="description"></textarea>
+        <div *ngIf="productForm.get('description')?.hasError('minlength') && productForm.get('description')?.touched">
+          Description must contain at least 10 characters.
+        </div>
+      </div>
+    
+      <!-- Button -->
+      <button type="button" [disabled]="productForm.invalid" (click)="addProduct()">Add Product</button>
+</form>

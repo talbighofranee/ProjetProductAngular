@@ -1,0 +1,7 @@
+
+<fieldset *ngFor="let p of products">
+    <legend>{{p.Name}}</legend>
+    <p>Price : {{p.Price}}</p>
+    <button (click)="addToCart(p)">Buy</button>
+    <button (click)="selectProduct(p)">Details</button>
+</fieldset>

@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "Name": "json-server",
+      "Price": 500,
+      "Description": "typicode"
+    },
+    {
+      "id": 2,
+      "Name": "ghofrane",
+      "Price": 0,
+      "description": "gtrrgrterer"
+    },
+    {
+      "id": 3,
+      "Name": "(tgtggtg",
+      "Price": 222,
+      "description": "rtgrttrgtrgr"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "Name": "json-server",
+      "Price": 500,
+      "Description": "typicode"
+    },
+    {
+      "id": 2,
+      "Name": "ghofrane",
+      "Price": 0,
+      "description": "gtrrgrterer"
+    },
+    {
+      "id": 3,
+      "Name": "(tgtggtg",
+      "Price": 222,
+      "description": "rtgrttrgtrgr"
+    }
+  ]
+}
